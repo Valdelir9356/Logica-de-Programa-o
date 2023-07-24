@@ -1,0 +1,49 @@
+import java .util. Scanner;
+public class Exerc01{
+    public static void main(String args[]){
+        Scanner ler  = new Scanner (System.in);
+        String nome;
+        String Cidade;
+        int num1;
+        int num2;
+        int num3;
+        System.out.println(" Digite o seu nome: ");
+        nome = ler.nextLine();
+             
+        System.out.println("Digite o valor para o Primeiro Número:");
+        num1 = ler . nextInt();
+        System.out.println("Digite o valor para o Segundo Número:");
+        num2 = ler . nextInt();
+        System.out.println("Digite o valor para o Terceiro  Número:");
+        num3 = ler . nextInt();
+        
+        int resultado =(num1+num2+num3) *10;
+        
+        System.out.println("Resultado:"+resultado);
+        System.out.printf("Confere este valor, ve se ta certo???:");
+    }
+}
+
+import java .util. Scanner;
+public class Principal{
+    public static void main(String args[]){
+        Scanner ler  = new Scanner (System.in);
+        Exerc01 ex1 = new Exerc01();
+         String nome;
+        
+        int num1;
+        int num2;
+        System.out.println(" Digite o seu nome: ");
+        nome = ler.nextLine();
+               
+        System.out.println("Digite o valor para o Primeiro Número:");
+        num1 = ler . nextInt();
+        System.out.println("Digite o valor para o Segundo Número:");
+        num2 = ler . nextInt();
+       
+        int resultado =(num1+num2)*10;
+        System.out.println("nome:"+ nome+ 
+        "Resultadooo:"+resultado);
+        System.out.println("VC fez certoo:");
+    }
+}
